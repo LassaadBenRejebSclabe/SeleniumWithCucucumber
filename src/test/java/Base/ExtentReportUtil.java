@@ -37,9 +37,9 @@ public class ExtentReportUtil extends BaseUtil {
     public void ExtentReportScreenshot() throws IOException {
 
        
-        //File scr = ((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
-        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+        File scr = ((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
+       // File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        //String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
         Files.copy(scr.toPath(), new File(reportLocation + "screenshot.png").toPath());
         scenarioDef.fail("details").addScreenCaptureFromPath(reportLocation + "screenshot.png");
     }
