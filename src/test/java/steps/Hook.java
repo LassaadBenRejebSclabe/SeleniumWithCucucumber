@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Hook extends BaseUtil{
 
-
+public  WebDriver driver;
     private BaseUtil base;
 
     public Hook(BaseUtil base) {
@@ -36,7 +36,7 @@ System.out.println("22222222");
         base.Driver = new ChromeDriver();
         System.out.println("44444444444");
         
-        public  WebDriver driver;
+        
         System.out.println("55555");
         System.setProperty("webdriver.chrome.driver", "C:/Libs/chromedriver.exe);
 System.out.println("66666");
