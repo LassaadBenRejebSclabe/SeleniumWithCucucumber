@@ -22,7 +22,7 @@ public class Hook extends BaseUtil{
     public void InitializeTest(Scenario scenario) {
 
 System.out.println("111111111111");
-        scenarioDef = base.features.createNode(scenario.getName());
+        //scenarioDef = base.features.createNode(scenario.getName());
 System.out.println("22222222");
         System.out.println("Opening the browser : Firefox");
 
