@@ -35,6 +35,15 @@ System.out.println("22222222");
         System.out.println("3333333333333");
         base.Driver = new ChromeDriver();
         System.out.println("44444444444");
+        
+        public  WebDriver driver;
+        System.out.println("55555");
+        System.setProperty("webdriver.chrome.driver", "C:/Libs/chromedriver.exe);
+System.out.println("66666");
+                    driver = new ChromeDriver();
+System.out.println("7777");
+                    driver.manage().window().maximize();
+        System.out.println("888888");
     }
 
 
