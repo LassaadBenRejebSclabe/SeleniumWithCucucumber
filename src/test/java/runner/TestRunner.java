@@ -4,8 +4,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 /**
  * Created by Karthik on 31/01/2019.
@@ -15,9 +14,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 @CucumberOptions(features = {"src/test/java/features"} , format = {"json:target/cucumber.json","html:target/site/cucumber-pretty"},
         glue = "steps")
 public class TestRunner extends AbstractTestNGCucumberTests{
-        System.setProperty("webdriver.chrome.driver", "C:/Libs/chromedriver.exe");
-        System.out.println("3333333333333");
-        base.Driver = new ChromeDriver();
-        System.out.println("44444444444");
+       
 
 }
